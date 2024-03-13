@@ -1,0 +1,6 @@
+import pandas as pd
+datafile = pd.read_csv("california_housing_train.csv")
+print(datafile.mean())
+print("---------------------------")
+df2 = datafile.loc[1:9:2]
+print(df2.mean())
